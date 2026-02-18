@@ -1,16 +1,41 @@
-# React + Vite
+# React Course Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal reference app for React topics covered in [John Smilga's React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/). Written in clear, simple English — designed to be a go-to guide for how to use React concepts in practice.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 11 categories, 39 topic pages
+- Sidebar navigation with search/filter
+- Syntax-highlighted code blocks with copy button
+- Tip, warning, and info callout boxes
+- Quick reference cheat-sheet on every page
+- Mobile responsive
 
-## React Compiler
+## Topics Covered
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Category | Topics |
+|---|---|
+| **Fundamentals** | JSX, Components, Props, Lists & Keys, Events, Imports & Exports, Styling |
+| **Hooks** | useState, useEffect, useRef, useReducer, useContext, useCallback, useMemo, useTransition, Custom Hooks |
+| **Forms** | Controlled Inputs, Multiple Inputs, FormData API, Other Inputs |
+| **Conditional Rendering** | Multiple Returns, Short Circuit, Ternary Operator |
+| **Performance** | React.memo, Suspense & Lazy, Lower State |
+| **React Router** | Router Setup, Nested Routes, Route Loaders, Form Actions, Query Params |
+| **HTTP & Data Fetching** | Axios Basics, Axios Advanced, React Query |
+| **State Management** | Context API, Redux Toolkit |
+| **Styling** | CSS in React, Styled Components, Tailwind CSS |
+| **TypeScript** | TypeScript Basics, TypeScript + React |
+| **Next.js** | Fundamentals, Routing & Layouts, Server Components, Server Actions, Data Fetching |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Built With
+
+- React 19 + Vite
+- React Router DOM
+- react-syntax-highlighter
