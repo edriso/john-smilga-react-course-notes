@@ -37,6 +37,13 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className="sidebar-header">
           <span className="logo-icon">⚛</span>
           <h2>React Notes</h2>
+          <button
+            className="sidebar-close-btn"
+            onClick={onClose}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
         </div>
         <div className="sidebar-search">
           <input

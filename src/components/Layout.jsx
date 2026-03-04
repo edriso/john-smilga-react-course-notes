@@ -9,13 +9,15 @@ const Layout = () => {
   return (
     <div className="app-layout">
       <ScrollToTop />
-      <button
-        className="mobile-menu-btn"
-        onClick={() => setSidebarOpen(true)}
-        aria-label="Open menu"
-      >
-        ☰
-      </button>
+      {!sidebarOpen && (
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setSidebarOpen(true)}
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+      )}
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <main className="main-content">
         <div className="content-area">
