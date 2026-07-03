@@ -135,7 +135,7 @@ const router = createBrowserRouter([
       { path: 'nextjs/data-fetching', element: <DataFetching /> },
     ],
   },
-]);
+], { basename: import.meta.env.BASE_URL.replace(/\/$/, '') });
 
 const App = () => {
   return <RouterProvider router={router} />;
