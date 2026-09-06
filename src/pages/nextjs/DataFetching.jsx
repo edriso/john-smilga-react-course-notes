@@ -92,7 +92,7 @@ const ProductsPage = async () => {
   return (
     <div>
       {products.map((p) => (
-        <div key={p.id}>{p.name} - ${p.price}</div>
+        <div key={p.id}>{p.name} - \${p.price}</div>
       ))}
     </div>
   );

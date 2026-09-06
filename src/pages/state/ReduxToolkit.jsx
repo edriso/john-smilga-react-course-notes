@@ -106,7 +106,7 @@ const CartContainer = () => {
       <h2>Cart ({amount} items)</h2>
       {cartItems.map((item) => (
         <div key={item.id}>
-          <h4>{item.title} - ${item.price}</h4>
+          <h4>{item.title} - \${item.price}</h4>
           <button onClick={() => dispatch(increase(item.id))}>
             +
           </button>
@@ -115,7 +115,7 @@ const CartContainer = () => {
           </button>
         </div>
       ))}
-      <h3>Total: ${total.toFixed(2)}</h3>
+      <h3>Total: \${total.toFixed(2)}</h3>
       <button onClick={() => dispatch(clearCart())}>
         Clear Cart
       </button>
